@@ -4,11 +4,11 @@ import java.io.*;
 import java.util.*;
 
 /**
- * TextWriterApp.java	1.00 Nov 25, 2003
+ * TextWriterApp3.java	1.00 Nov 25, 2003
  *
  * A class that writes data to a text file, with buffering.
  */
-public class TextWriterApp{
+public class TextWriterApp3{
 	
    public static void main(String[] args) throws IOException{
    	  boolean append = true;   // you can change this
@@ -17,7 +17,7 @@ public class TextWriterApp{
 	  File data = new File(File.separatorChar + "temp" + File.separatorChar 
                         + "contact.txt");
 	  		
-      // This is where we setup our streams (append = false means overwrite)
+      // This is where we setup our streams (append = true means add to)
       // new FileWriter() creates the file if doesn't exit
 	  PrintWriter out = new PrintWriter(
 						new BufferedWriter(
@@ -61,8 +61,6 @@ public class TextWriterApp{
                 
             }
         }
-//    } else
-//	     System.out.println("File not found: test.txt");
     } // end main
    }
 
